@@ -1,0 +1,216 @@
+#calculator{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    grid-gap: 1fr 1fr;
+}
+button { 
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+  
+}
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button:hover {
+    background-color: rgba(128, 128, 128, 0.634);
+}
+ 
+body {
+    background-color: black;
+}
+
+#equals, #clear {
+    background-color: rgba(255, 217, 0, 0.839);
+}
+#equals:hover,
+#clear:hover {
+    background-color: rgba(255, 217, 0, 0.668);
+}
+
+#empty {
+    color: gray;
+    background-color: gray;
+}
+
+
+@media screen and (min-width: 320px){
+    #calculator{
+        margin: 50px 10px;
+       
+    }
+    button { 
+        width: 0.2em;
+        padding: 27px;
+        font-size: 15px;
+        text-align: center;
+        margin: 0 5px;
+    }
+    #rows {
+        width: auto;
+    }
+    
+    #buttons {
+        margin: 0 10px;
+    }
+
+    input { 
+        width: 200px;
+        padding: 50px;
+        font-size: 40px;
+        text-align: right; 
+        margin-bottom: 20px;
+    }
+    
+}
+@media only screen and (min-width: 425px) {
+    #calculator{
+        margin: 0px 20px; 
+    }
+    button { 
+        width: 3em;
+        padding: 25px;
+        font-size: 30px;
+        margin: auto;
+    }   
+    
+    #buttons {
+        margin: 0px 25px;
+    }
+    input { 
+        width: 340px;
+        padding: 30px;
+        font-size: 40px;
+        text-align: right; 
+        margin: 25px 10px;
+        
+    }
+} 
+@media only screen and (min-width: 768px) {
+    #calculator{
+        margin: 50px 100px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px; 
+    }
+    button { 
+        width: 4em;
+        padding: 35px;
+        font-size: 30px;
+        margin: auto;
+    }
+
+    input { 
+        width: 390px;
+        padding: 50px;
+        font-size: 40px;
+        text-align: right;
+        margin-left: 25px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        
+    }
+
+    .fifth-row {
+        margin-bottom: 25px;
+    }
+    
+}
+@media only screen and (min-width: 1024px) {
+    #calculator{
+        margin: 50px 220px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+    }
+    button { 
+        width: 4em;
+        padding: 35px;
+        font-size: 30px;
+        margin: auto;
+    }
+    
+    input { 
+        width: 390px;
+        padding: 50px;
+        font-size: 40px;
+        text-align: right;
+        margin-left: 25px; 
+        margin-top: 25px;
+        margin-bottom: 20px;
+        
+    }
+         
+    .fifth-row {
+        margin-bottom: 25px;
+    }
+    
+}
+@media only screen and (min-width: 1440px) {
+    #calculator{
+        margin: 50px 425px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+    }
+    button { 
+        width: 4em;
+        padding: 35px;
+        font-size: 30px;
+        margin: auto;
+    }
+        
+    input { 
+        width: 415px;
+        padding: 35px;
+        font-size: 40px;
+        text-align: right; 
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        
+    }
+         
+    .fifth-row {
+        margin-bottom: 25px;
+    }
+    
+}
+@media only screen and (min-width: 2560px) {
+    #calculator{
+        margin: 50px 975px;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: white;
+        border-radius: 25px;
+    }
+    button { 
+        width: 4em;
+        padding: 35px;
+        font-size: 30px;
+        margin: auto;
+    }
+    
+    input { 
+        width: 415px;
+        padding: 35px;
+        font-size: 40px;
+        text-align: right; 
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 25px;
+        
+    }
+    
+    .fifth-row {
+        margin-bottom: 25px;
+    }
+    
+}
