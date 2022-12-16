@@ -5,6 +5,9 @@ const clear = document.getElementById("clear");
 const equals = document.getElementById("equals");
 const decimal = document.getElementById("decimal");
 const operators = ["+", "-", "*", "/"];
+const percentage = document.getElementById("percentage")
+const toggle = document.getElementById("toggle")
+const squareroot = document.getElementById("square-root")
 
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function() {
@@ -32,6 +35,23 @@ for (let i = 0; i < buttons.length; i++) {
       const equation = input.value;
       input.value = eval(equation);
     }
+    //If the value is the percentage button, divide value by 100
+    else if(value === "%") {
+      input.value /=  100
+    }
+    //Toggles between positive and negative
+    else if(value === "+/-" ) {
+      if (input.value.startsWith("-")) {
+        input.value = input.value.substring(1);
+      } else {
+        input.value = "-" + input.value;
+      }
+    }
+    //Finds the square root vaue of the input
+
+    else if(value === "√") {
+        input.value = Math.sqrt(input.value);
+    }
     // If the value is the decimal button, add a decimal point
     // to the input field unless one already exists or the
     // last character in the input field is an operator
@@ -40,9 +60,6 @@ for (let i = 0; i < buttons.length; i++) {
           operators.indexOf(input.value.slice(-1)) === -1) {
         input.value += value;
       }
-    }
-    else if (value === "%") {
-        input.value / 100
     }
   });
 }
