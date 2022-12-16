@@ -32,10 +32,6 @@ body {
     background-color: rgba(255, 217, 0, 0.668);
 }
 
-#empty {
-    color: gray;
-    background-color: gray;
-}
 
 
 @media screen and (min-width: 320px){
